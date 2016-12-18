@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head><title>Assignment1</title>
+<style>
+#heading{
+	text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+/*div id for content 1*/
+#side1{
+	position: relative;
+	left:100px;
+	background-color:grey;
+	padding: 10px;
+	border: 5px solid black;
+	box-sizing: border-box;
+	margin-right: auto;
+	width:25%
+
+}
+/*div id for content 2*/
+#side2{
+	position: relative;
+	top:-255px;
+	left: 500px;
+	background-color:grey;
+	padding: 10px;
+	border: 5px solid black;
+	box-sizing: border-box;
+	width:25%;
+}
+/*div id for content 3*/
+#side3{
+	position: relative;
+	top:-515px;
+	left:900px;
+	background-color:grey;
+	padding: 10px;
+	border: 5px solid black;
+	box-sizing: border-box;
+	width:25%
+}
+#content,#content2,#content3{
+background-color: grey;
+}
+/*div for title "chicken"*/
+#c1{
+	border:2px solid black;
+	box-sizing: border-box;
+	text-align: right;
+	margin: 10px;
+	padding:10px;
+	background-color: lightpink;
+}
+/*div for title "beef"*/
+#c2{
+	border:2px solid black;
+	box-sizing: border-box;
+	text-align: right;
+	margin: 10px;
+	padding:10px;
+	background-color: maroon;
+}
+/*div for title "sushi"*/
+#c3{
+	border:2px solid black;
+	box-sizing: border-box;
+	text-align: right;
+	margin: 10px;
+	padding:10px;
+	background-color: lightyellow;
+}
+/*row width for whole desktop*/
+.temp{
+	width: 100%;
+}
+/*for desktop*/
+@media (min-width: 992px) 
+{
+	.d1,.d2,.d3{
+		 float: left;
+    border: 1px solid black;
+	}
+}
+.d1{
+	width: 33.33%;
+}
+.d2{
+	width: 33.33%
+}
+.d3{
+width: 33.33;
+}
+/*for tablets*/
+@media (min-width: 768px) and (max-width: 991px){
+	.temp{
+		width: 50%;
+	}
+.d11,.d22,.d33{
+	float: left;
+	border: 1px solid black;
+}
+.d11{
+	width: 25%;
+}
+.d22{
+	width: 25%;
+}
+.d33{
+	width: 50%;
+}
+/*for mobiles*/
+@media(max-width:767px)
+{
+	.temp{
+		width: 25%;
+
+	}
+	.dm1,.dm2,.dm3{
+		float: left;
+		border: 1px solid black;
+
+	}
+	.dm1{
+		width:12%;
+		height: 20px;
+	}
+	.dm2{
+		width: 12%;
+
+	}
+	.dm3{
+		width: 25%;
+	}
+}
+
+</style>
+</head>
+<body>
+<div><h2 id="heading" style="text-align: center;">Our Menu</h2></div>
+<div class="temp">
+<div id="d1 d11 dm1"><p >
+<div id="side1"><div id="c1"><h3>Chicken</h3></div>
+<div id="content">lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div></div>
+</p></div>
+<div id="d2 d22 dm2"><p>
+<div id="side2"><div id="c2"><h3>Beef</h3></div>
+<div id="content2">lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div></div>
+</p></div>
+<div id="d3 d33 dm3"><p>
+<div id="side3"><div id="c3"><h3>Sushi</h3></div>
+<div id="content3">lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div></div>
+</p></div>
+</div>
+</body>
+</html>
